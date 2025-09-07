@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Spotify Clone</h2>
+      <ul>
+        <li>Home</li>
+        <li>Search</li>
+        <li>Library</li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <header>
+        <input type="text" id="search" placeholder="Search for a track or artist...">
+      </header>
+
+      <section class="cards">
+        <div class="card" data-index="0">
+          <img src="images/meditation-4608914_1280.jpg" alt="Album 1">
+          <h3>Beat</h3>
+          <p>Pixabay Artist</p>
+        </div>
+        <div class="card" data-index="1">
+          <img src="images/notebook-420011_1280.jpg" alt="Album 2">
+          <h3>Healing</h3>
+          <p>Pixabay Artist</p>
+        </div>
+        <div class="card" data-index="2">
+          <img src="images/photography-8486085_1280.jpg" alt="Album 3">
+          <h3>Soothing</h3>
+          <p>Pixabay Artist</p>
+        </div>
+        <div class="card" data-index="3">
+          <img src="images/vinyl-1595847_1280.jpg" alt="Album 4">
+          <h3>DJ</h3>
+          <p>Pixabay Artist</p>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Music Player -->
+  <div class="player">
+    <audio id="audio" controls></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
